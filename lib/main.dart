@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_demo/favprovider.dart';
-import 'package:provider_demo/todo.dart';
+import 'package:provider_demo/todo/todo.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
@@ -15,12 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Todo(),
+      home: MyTodoList(),
     );
   }
 }
