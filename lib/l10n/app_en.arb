@@ -1,0 +1,11 @@
+{
+    "greeting" : "Hello",
+    "@greeting" :{
+        "descreption":"This is greeting"
+    },
+
+    "welcomeText" : "Welcome to India",
+    "@welcomeText" :{
+        "descreption" :"Welcome desc"
+    }
+}
