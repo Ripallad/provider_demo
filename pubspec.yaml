@@ -41,6 +41,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   web_socket_channel: ^2.4.0
+  get: ^4.6.6
 
 
 dev_dependencies:

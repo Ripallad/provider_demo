@@ -9,6 +9,8 @@ class favProvider with ChangeNotifier {
 
   bool isDataLoaded = false;
 
+  List datalist = [];
+
   addToList(index) {
     favlist.add(index);
     notifyListeners();

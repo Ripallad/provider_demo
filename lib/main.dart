@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_demo/favprovider.dart';
+import 'package:provider_demo/getx/websocketg.dart';
 import 'package:provider_demo/provider/languageprovider.dart';
 import 'package:provider_demo/todo/todo.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
       ],
       supportedLocales: [Locale('en'), Locale('hi')],
       locale: context.watch<LanguageProvider>().current,
-      home: WebSocketDemo(
+      home: WebsocketgetxScreen(
           channel: IOWebSocketChannel.connect("ws://echo.websocket.org")),
     );
   }
